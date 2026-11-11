@@ -9,6 +9,7 @@ vector<vector<ll>> ship;
 vector<vector<ll>> dp;
 void dfs(const ll& pwd,const ll& pnt)
 {
+    dp[pwd][0LL]=0LL;
     dp[pwd][1LL]=A[pwd];
     for (const ll& nxt:ship[pwd])
     {
